@@ -1,0 +1,31 @@
+name: pIPBans
+version: 0.1-SNAPSHOT
+main: pl.paisley4.pipbans.pIPBans
+author: Paisley4
+website: https://seehc.pl/
+description: Wtyczka do banowania graczy na Bungeecordzie.
+
+commands:
+  banip:
+    description: Permanenta blokada IP.
+    aliases: [ban-ip, block-ip]
+  tempbanip:
+    description: Tymczasowa blokada gracza na adres IP.
+    aliases: [tempban-ip, tempblock-ip]
+  unbanip:
+    description: Odblokowuje adres IP lub ostatni adres IP gracza z blokady.
+    aliases: [pardon-ip, unlock-ip, unban-ip]
+
+permissions:
+  ipbans.*:
+    description: Daje dostep do wszystkich mozliwosci tej wtyczki.
+    children:
+      ipbans.banip: true
+      ipbans.tempbanip: true
+      ipbans.unbanip: true
+  ipbans.tempbanip:
+    description: Pozwala graczowi zablokowac tymczasowo adres IP.
+  ipbans.banip:
+    description: Pozwala graczowi zablokowac permanentnie adres IP.
+  ipbans.unbanip:
+    description: Pozwala graczowi odblokowac adres IP lub ostatni adres IP gracza.

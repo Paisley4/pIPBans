@@ -1,0 +1,66 @@
+## Informacja o braku permisji do uzycia komendy
+no-permission: '&cNie posiadasz permisji do wykonania tej komendy!'
+## Wiadomosc wyrzucenia gracza przez bana na IP, ktory nigdy nie wygasnie
+## <enter> - Przejscie do nastepnej linii
+## <reason> - Powod
+## <banner> - Gracz ktory zablokowal
+ip-perm-kick: '&cZostales zbanowany permanentnie na adres IP za &6<reason>!<enter>&cUnbana zakupisz na: &6https://example.com/'
+## Wiadomosc o zbanowaniu gracza permanentnie na IP
+## <player> - Gracz ktory zostal zbanowany
+## <banner> - Gracz ktory zablokowal
+## <reason> - Powod
+ip-perm-info: '&cGracz &6<player> &czostal permanentnie zbanowany na adres IP przez &6<banner> &cza &6<reason>&c!'
+## Wiadomosc wyrzucenia gracza przez bana na IP, ktory zostal zablokowany na jakis czas
+## <enter> - Przejscie do nastepnej linii
+## <ends> - Konczy sie
+## <reason> - Powod
+## <banner> - Gracz ktory zablokowal
+ip-temp-kick: '&cZostales zbanowany tymczasowo na adres IP do dnia &6<ends> &cza &6<reason>&c!<enter>&cUnbana zakupisz na: &6https://example.com/'
+## Wiadomosc o zbanowaniu gracza tymczasowo na IP
+## <player> - Gracz ktory zostal zbanowany
+## <banner> - Gracz ktory zablokowal
+## <ends> - Konczy sie
+ip-temp-info: '&cGracz &6<player> &czostal tymczasowo zbanowany na adres IP &cza &6<reason>&c przez &6<banner>&c do <ends>!'
+## Wiadomosc o tym, ze gracz posiada juz bana
+player-has-ban: '&cTen gracz posiada juz bana!'
+## Wiadomosc o tym, ze gracz nie posiada bana
+player-has-not-ban: '&cTen gracza nie posiada bana!'
+## Wiadomosc o tym ze gracz nigdy nie byl na serwerze = Nie ma go w rejestrze i nie ma jego IP
+player-not-exists: '&cTen gracz nigdy nie byl na serwerze!'
+## Wiadomosc do wykonawcy komendy o tym ze odbanowal gracza
+player-got-unban: '&aGracz zostal odbanowany na IP!'
+## Informacja dla gracza o permanentym banie po wejsciu na serwer
+## <reason> - Powod
+## <banner> - Od kogo otrzymal
+## <enter> - Przejscie do nastepnej linii
+player-ban-perm: '&cOtrzymales permanentnego bana na IP od &6<banner>&c za &a<reason><enter>&cUnbana zakupisz na https://example.com/'
+## Informacja dla gracza o tymczasowym banie po wejsciu na serwer
+## <reason> - Powod
+## <banner> - Od kogo otrzymal
+## <ends> - Konczy sie
+## <enter> - Przejscie do nastepnej linii
+player-ban-temp: '&cOtrzymales tymczasowego bana na IP do <ends> od &6<banner> &cza &a<reason><enter>&cUnbana zakupisz na https://example.com/'
+## Format daty jak bedzie wygladala w <ends>
+## year - Rok
+## month - Miesiac
+## day - Dzien
+## hour - Godzina
+## minute - Minuta
+## second - Sekunda
+time-format: 'hour:minute:second day.month.year'
+## Jak uzyc danej komendy np. banip: '&3Uzycie: &b/banip <ip/nick> <reason>'
+## <ip> - Adres IP gracza
+## <nick> - Nazwa gracza w grze
+## <quantity> - Ilosc
+## <unit> - Jednostka
+## <reason> - Powod
+usage:
+  banip: '&3Uzycie: &b/banip <ip/nick> <reason>'
+  ## Komenda tempbanip posiada 5 jednostek czasu ktore wstawiamy w miejsce <unit>
+  ## month/months/mon - Miesiace
+  ## day/days/d - Dni
+  ## hour/hours/h - Godziny
+  ## minute/minutes/m - Minuty
+  ## second/seconds/s - Sekundy
+  tempbanip: '&3Uzycie: &b/tempbanip <ip/nick> <quantity> <unit> <reason>'
+  unbanip: '&3Uzycie: &b/unbanip <ip/nick>'

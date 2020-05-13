@@ -1,0 +1,11 @@
+## TYPE OF SAVE DATA
+## FILE - Files
+## MYSQL - MySQL base
+data_save_type: FILE
+## DATA TO MYSQL BASE (ONLY IN MYSQL MODE)
+mysql:
+  host: 'localhost'
+  port: 3306
+  database: 'server'
+  username: 'user'
+  password: ''

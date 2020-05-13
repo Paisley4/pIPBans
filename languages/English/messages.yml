@@ -1,0 +1,88 @@
+#####################
+##                 ##
+##  pIPBans - 0.1  ##
+##   by Paisley4   ##
+##                 ##
+#####################
+
+## Sorry for my English, but I'm from Poland ##
+
+##########################
+##                      ##
+##  Visible for player  ##
+##                      ##
+##########################
+
+## Information if player doesn't have permissions
+no-permission: '&cYou do not have permission!'
+## Kick message - perm ban
+## <enter> - Next line
+## <reason> - Reason
+## <banner> - Banner
+ip-perm-kick: '&cYou has been permanently blocked on IP: &6<reason>!<enter>&cUnban you can buy at: &6https://example.com/'
+## Chat message - perm ban
+## <player> - Banned player
+## <banner> - Banner
+## <reason> - Reason
+ip-perm-info: '&cPlayer &6<player> &cgot permanently ban on IP by &6<banner>&c: &6<reason>&c!'
+## Kick message - temp ban
+## <enter> - Next line
+## <ends> - When the ban ends
+## <reason> - Reason
+## <banner> - Banner
+ip-temp-kick: '&cYou has been temporarily blocked to: &6<ends>&c: &6<reason>&c!<enter>&cUnban you can buy at: &6https://example.com/'
+## Chat message - temp ban
+## <player> - Banned
+## <banner> - Banner
+## <ends> - When the ban ends
+ip-temp-info: '&cPlayer &6<player> &cgot temporarily ban on IP&c: &6<reason>&c by &6<banner>&c to <ends>!'
+## Information about perm ban on join to the server
+## <reason> - Reason
+## <banner> - Banner
+## <enter> - Next line
+player-ban-perm: '&cYou has been permanently blocked by &6<banner> &con IP: &6<reason>!<enter>&cUnban you can buy at: &6https://example.com/'
+## IInformation about temp ban on join to the server
+## <reason> - Reason
+## <banner> - Banner
+## <ends> - When the ban ends
+## <enter> - Next line
+player-ban-temp: '&cYou has been temporarily blocked by &6<banner> &cto: &6<ends>&c: &6<reason>&c!<enter>&cUnban you can buy at: &6https://example.com/'
+
+##################################
+##                              ##
+##  Visible for administrators  ##
+##                              ##
+##################################
+
+## Message that the player has a ban
+player-has-ban: '&cThis player has a ban!'
+## Message that the player has not a ban
+player-has-not-ban: '&cThis player has not a ban!'
+## Message that the player has never been on the server
+player-not-exists: '&cThis player has never been on the server'
+## Message to executor about that he unbaned player on IP
+player-got-unban: '&aPlayer got unban on IP!'
+## Format of date what is printing in <ends>
+## year - Year
+## month - Month
+## day - Day
+## hour - Hour
+## minute - Minute
+## second - Second
+time-format: 'hour:minute:second day.month.year'
+## How to use the command e.g banip: '&3Usage: &b/banip <ip/nick> <reason>'
+## <ip> - Player's IP address
+## <nick> - Player nick in game
+## <quantity> - Quantity
+## <unit> - Unit
+## <reason> - Reason
+usage:
+  banip: '&3Usage: &b/banip <ip/nick> <reason>'
+  ## the command has 5 units which we enter in <unit>
+  ## month/months/mon - Months
+  ## day/days/d - Days
+  ## hour/hours/h - Hours
+  ## minute/minutes/m - Minutes
+  ## second/seconds/s - Seconds
+  tempbanip: '&3Usage: &b/tempbanip <ip/nick> <quantity> <unit> <reason>'
+  unbanip: '&3Usage: &b/unbanip <ip/nick>'

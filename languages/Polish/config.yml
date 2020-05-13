@@ -1,0 +1,11 @@
+## TYP ZAPISU DANYCH
+## FILE - Pliki
+## MYSQL - Baza MySQL
+data_save_type: FILE
+## DANE DO BAZY MYSQL (WYMAGANE W TRYBIE ZAPISU MYSQL)
+mysql:
+  host: 'localhost'
+  port: 3306
+  database: 'server'
+  username: 'user'
+  password: ''
