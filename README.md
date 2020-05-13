@@ -5,8 +5,8 @@
 # Contact
  E-mail: krszysztofszczepaniak05@gmail.com
 # Languages
- Polish
+ Polish,
  English
 # Information
- pIPBans is plugin for server to ban player on IP
+ pIPBans is plugin for server to ban player on IP. 
  If you found any error send message to me what's happened
